@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The New York Times - Breaking News</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <header>
+        <section>
+
+<!--big screen from here-->
+
+            <div class="row">
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block" align="left">
+                    <div class="searchover lupaforma" style="float: left" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    </div>
+
+                    <input type="checkbox" id="activar_lupa"> <!--lupa-->
+                    <label for="activar_lupa" style="float: left" class="lupaforma searchover"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></label>
+                    <div class="lupa">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="SEARCH" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">GO</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block" align="left">
+                    <nav id="menu_container_arriba"><ul>
+                        <li style="font-size: small">U.S.</li>
+                        <li><a class="where" href="https://www.nytimes.com/international/?action=click&region=Editions&pgtype=Homepage" style="font-size: small">INTERNATIONAL</a></li>
+                        <li><a class="where" href="https://www.nytimes.com/ca/?action=click&region=Editions&pgtype=Homepage" style="font-size: small">CANADA</a></li>
+                        <li><a class="where" href="https://www.nytimes.com/es/?redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fca%2F%3Faction%3Dclick%26region%3DEditions%26pgtype%3DHomepage" style="font-size: small">ESPAÑOL</a></li>
+                        <li><a class="where" href="https://cn.nytimes.com/?redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fca%2F%3Faction%3Dclick%26region%3DEditions%26pgtype%3DHomepage" style="font-size: small">中國</a></li>
+                    </ul></nav>
+                </div>
+
+                <div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block d-xl-block" align="center" ></div>
+                <aside class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block subscribe" align="right">
+                    <a class="button" href="https://www.nytimes.com/subscription?campaignId=9YU8R&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2F">SUBSCRIBE FOR €0.50/WEEK</a>
+                </aside>
+                <aside class="col-lg-1 d-none d-sm-none d-md-none d-lg-block d-xl-block login" align="right">
+                    <a class="button" href="https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fonboarding-offer%3FcampaignId%3D7JFJX%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252F&asset=masthead">LOG IN</a>
+                </aside>
+            </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col1" align="left"> <!--fecha-->
+                        <script>
+                            var date = new Date();
+                            var d  = date.getDate();
+                            var day = (d < 10) ? '0' + d : d;
+                            var m = date.getMonth() + 1;
+                            var month = (m < 10) ? '0' + m : m;
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+                            document.write(day + "/" + month + "/" + year);
+                        </script>
+                        <div class="row">
+                            <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col3" > </div>
+                        </div>
+                        <div class="row">
+                            <aside class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block" >
+                                <a class="todayspaper" href="https://www.nytimes.com/section/todayspaper?redirect_uri=https%3A%2F%2Fwww.nytimes.com%2F">Today'sPaper</a>
+                            </aside>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block"  align="center"> <!--title-->
+                        <h1> The New York Times </h1>
+                    </div>
+
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col1" align="right"> <!--weather-->
+                        <img class="img-fluid" src="images/tiempo.png">
+                    </div>
+
+                </div>
+
+        </section>
+        <!--to here (big screen)-->
+
+        <!--small and xsmall sreen from here-->
+        <div class="row">
+            <div class="d-lg-none col-sm-1 col-1 lupaforma"> <!--3 sticks-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </div>
+            <div class="d-lg-none d-xl-none col-md-10 col-sm-10 col-10"> <!--title-->
+                <h1 class="titpantpeq"> The New York Times </h1>
+            </div>
+            <div class="d-lg-none d-xl-none  col-md-1 col-sm-1 col-1 lupaforma align="left" "> <!--person-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>
+            </div>
+        </div>
+        <!--to here (small and xsmall sreen)-->
+</div>
+
+<section>
+
+    <div class="row menucont">
+        <div class="col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block" align="left">
+        <hr class="primerhr col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        <nav id="menu_container"><ul>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/world">World</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/us">U.S.</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/politics">Politics</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/nyregion">N.Y.</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/business">Business</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/opinion">Opinion</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/science">Science</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/health">Health</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/sports">Sports</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/arts">Arts</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/books">Books</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/style">Style</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/food">Food</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/travel">Travel</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/international/section/magazine">Magazine</a></li>
+            <li><a class="menu where" href="https://cooking.nytimes.com/">Cooking</a></li>
+            <li><a class="menu where" href="https://theathletic.com/uk/">TheAthletic</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/wirecutter/">Wirecutter</a></li>
+            <li><a class="menu where" href="https://www.nytimes.com/2023/04/10/health/abortion-ruling-pharma-executives.html">Games</a></li>
+        </ul></nav>
+            <hr class="hrdoble col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <hr class="segundohr col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+        </div>
+    </div>
+
+    <!--medium screen from here-->
+<hr class="hrmargentop col-md d-lg-none d-xl-none col-sm col">
+    <div class="row" >
+        <div class=" col-md-6 d-lg-none d-xl-none d-sm-none d-none d-md-block text-md-start fecha">
+            <script>
+                var date = new Date();
+                var d  = date.getDate();
+                var day = (d < 10) ? '0' + d : d;
+                var m = date.getMonth() + 1;
+                var month = (m < 10) ? '0' + m : m;
+                var yy = date.getYear();
+                var year = (yy < 1000) ? yy + 1900 : yy;
+                document.write(day + "/" + month + "/" + year);
+            </script>
+        </div>
+        <div class=" col-md-6 d-lg-none d-xl-none d-sm-none d-none d-md-block text-md-end">
+            <a class="subsmed" href="https://www.nytimes.com/subscription?campaignId=9YU8R&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2F">SUBSCRIBE FOR €0.50/WEEK</a>
+        </div>
+    </div>
+    <!-- to here (medium screen) -->
+
+    <!--small and xsmall sreen from here-->
+    <div class="row" >
+        <div class="d-md-none d-lg-none d-xl-none col-sm-7 col-7 text-sm-end fecha text-end">
+            <script>
+                var date = new Date();
+                var d  = date.getDate();
+                var day = (d < 10) ? '0' + d : d;
+                var m = date.getMonth() + 1;
+                var month = (m < 10) ? '0' + m : m;
+                var yy = date.getYear();
+                var year = (yy < 1000) ? yy + 1900 : yy;
+                document.write(day + "/" + month + "/" + year);
+            </script>
+        </div>
+        <div class="d-md-none d-lg-none d-xl-none col-sm-5 col-5 text-sm-end text-end">
+            <a class="subsmed" href="https://www.nytimes.com/subscription?campaignId=9YU8R&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2F">SUBSCRIBE FOR €0.50/WEEK</a>
+        </div>
+    </div>
+<hr class="primerhr col-md d-lg-none d-xl-none col-sm col">
+    <!-- to here (small and xsmall sreen) -->
+
+
+</section>
+
+    </header>
+
+<section>
+    <!--Big screen form here-->
+    <div class="row">
+        <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col1" align="left">
+            <div class="row">
+                <!-- New 1 -->
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/health/abortion-ruling-pharma-executives.html">
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3" align="left">
+                    <h3>Drug Company Leaders Condemn Ruling Invalidating Abortion Pill Approval</h3>
+                        <p class="Noticia">More than 400 executives said that the decision ignored both scientific and legal precedent and, if it stands, would create uncertainty. </p>
+                        <p> </p>
+                        <p class="Noticia">The Department of Justice, which is representing the F.D.A., filed a motion asking an appeal can be heared</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col4" align="right">
+                    <img class="img-fluid" src="images/Noticia1.webp" >
+                    <figcaption class="piepag" align="right">Erin Schaff/The New York Times</figcaption>
+                </div>
+            </div>
+<hr>
+            <!-- New 2 -->
+            <div class="row">
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/supreme-court-abortion-pill-fda.html">
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col3" align="left">
+                    <h4>Analysis: Even Supreme Court justices hostile to abortion may think twice before embracing the decision.</h4>
+                    <p class="read">7 MIN READ</p></a>
+                </div>
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col4" >
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/health/abortion-pill-fda.html">
+                    <h4>The ruling of mifepristone could spur other drug disputes, undermining the F.D.A.'s authority, experts said.</h4>
+                    <p class="read">4 MIN READ</p></a>
+                </div>
+            </div>
+
+<hr class="hroscuro ">
+
+            <!-- New 3 -->
+            <div class="row">
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/nashville-council-tennessee-lawmaker-jones.html">
+                    <h5>Expelled Democratic Lawmaker Is Sworn Back in to Tennessee House</h5>
+                    <p class="Noticia">The move to reappoint Representative Justin Jones was a swift rebuke to the Republican supermajority over its decision to expel him and another lawmaker</p>
+                    <p> </p>
+                    <p class="read">4 MIN READ</p></a>
+                    <hr>
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/us/tennessee-house-democrats-expulsion-shooting-gun-control.html">
+                    <h4>Here's what to know about the expulsion of Democratic lawmakers in Tennessee</h4></a>
+                </div>
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <iframe title="New York Times Video - Embed Player" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=unknown"></iframe>
+                    <figcaption class="piepag" align="right">The Associated Press and Reuters</figcaption>
+                </div>
+            </div>
+
+<hr class="hroscuro">
+
+            <!-- New 4 -->
+            <div class="row">
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/classified-documents-leak.html">
+                    <h5>Clues Left Online Might Aid Leak Investigation, Officials Say</h5>
+                    <p class="Noticia">A large number of people potentially had access to the Pentagon intelligence documents posted on social media.</p>
+                    <p> </p>
+                    <p class="read">4 MIN READ</p></a>
+                    <hr>
+                    <a class="nonstyle" href="https://www.nytimes.com/live/2023/04/11/world/russia-ukraine-news">
+                    <h5>U.S. Sees Reporter as Russian Hostage, Opening Option of Prisoner Exchange</h5>
+                    <p class="Noticia">The U.S. called Evan Gershkovich's arrest a wrongful detention, the same term applied to Brittney Griner, the W.N.B.A. star whom Rusiia released last year.</p></a>
+                    <a class="updateslink" href="https://www.nytimes.com/live/2023/04/11/world/russia-ukraine-news">See new updates</a>
+                    <hr>
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/world/europe/russia-booby-traps-ukraine-war.html">
+                    <h4>Finding land mines and lethal trip wires has become a dangerous art for Ukranian soldiers.</h4>
+                    <p> </p>
+                    <p class="read">4 MIN READ</p></a>
+                </div>
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <img class="img-fluid" src="images/Noticia4.webp">
+                    <figcaption class="piepag" align="right">Stefani Reynolds for The New York Times</figcaption>
+                </div>
+            </div>
+
+        </div> <!--div of the first column-->
+
+
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col2 ">
+            <div class="row">
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/style/cars-touch-screens.html">
+                <img class="img-fluid" src="images/Noticia5.webp">
+                <figcaption class="piepag" align="right">BMW</figcaption>
+                <h2>Cool? Or Just Clunky? The Fight Over Dashboard Touch Screens.</h2>
+                <p class="Noticia">As luxury cars become rolling supercomputers, designers are wondering how big is too big.</p>
+                <p> </p>
+                <p class="read">5 MIN READ</p></a>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/realestate/renters-upper-west-side-facebook-instagram.html">
+                    <img class="img-fluid" src="images/Noticia6.webp">
+                    <h4>How one family used Facebook and Instagram to find the perfect apartment</h4>
+                    <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/style/sonny-angels-dolls-tiktok.html">
+                    <img class="img-fluid" src="images/Noticia7.webp">
+                    <h4>Why do some people love this tiny doll from Japan?</h4>
+                    <p class="read">4 MIN READ</p></a>
+                </div>
+            </div>
+<hr class="hroscuro">
+            <div class="row">
+                <a class="opinion" href="https://www.nytimes.com/section/opinion">Opinion</a>
+            </div>
+            <div class="row">
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/opinion/paul-kagame-rwanda-britain.html">
+                <p class="nombre">ANJAN SUNDARAM</p>
+                <h5>He's a Brutal Dictator, and One of the West's Best Friends</h5>
+                <p class="read">4 MIN READ</p></a>
+                <hr>
+            </div>
+            <div class="row">
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/succession-logan-wealth.html">
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <p class="nombre">MICHELLE GOLDBERG</p>
+                    <h5>The Cold Truth at the Heart of 'Succession', Lyving on an Airplane Floor</h5>
+                    <p class="read">4 MIN READ</p></a>
+                </div>
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/succession-logan-wealth.html">
+                        <img class="img-fluid" src="images/Noticia9.webp"></a>
+                </div>
+            </div>
+
+<hr class="hroscuro">
+
+            <div class="row">
+                <p class="opinion">In Case You Missed It</p>
+                <cite class="subt">Top picks from The Times, recommended for you</cite>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/09/world/europe/ukraine-bakhmut-roads.html" >
+                        <h4>Fight for Roads Into Bakhmut Has Hit a Stalemate, Ukraine Says</h4>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/09/world/europe/ukraine-bakhmut-roads.html">
+                        <img class="img-fluid" src="images/Noticia2.webp"></a>
+                </div>
+            </div>
+        <hr>
+            <div class="row">
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/magazine/peeps-factory.html" >
+                        <h4>A Visit to the Peeps Factory</h4>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/magazine/peeps-factory.html">
+                        <img class="img-fluid" src="images/Noticia3.webp"></a>
+                </div>
+            </div>
+
+        </div> <!--div of the second column-->
+<p> </p>
+<hr class="hroscuro col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+<!--to here (big screen)-->
+
+<!--Medium, small and xsmall screen from here-->
+    <div class="d-lg-none col-12 col-sm-12 col-md-12 col1" align="left">
+        <div class="row">
+            <!-- New 1 -->
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/health/abortion-ruling-pharma-executives.html">
+                <div class="d-lg-none col-4 col-sm-4 col-dm-12 col3" align="left">
+                    <h3>Drug Company Leaders Condemn Ruling Invalidating Abortion Pill Approval</h3>
+                    <p class="Noticia">More than 400 executives said that the decision ignored both scientific and legal precedent and, if it stands, would create uncertainty. </p>
+                    <p> </p>
+                    <p class="Noticia">The Department of Justice, which is representing the F.D.A., filed a motion asking an appeal can be heared</p>
+                    <p> </p>
+                    <p class="read">5 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-8 col-sm-8 col-8 col4" align="right">
+            <img class="img-fluid" src="images/Noticia1.webp" >
+            <figcaption class="piepag" align="right">Erin Schaff/The New York Times</figcaption>
+        </div>
+    </div>
+    <hr>
+    <!-- New 2 -->
+    <div class="row">
+        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/supreme-court-abortion-pill-fda.html">
+            <div class="d-lg-none col-6 col-sm-6 col-md-6 col3" align="left">
+                <h4>Analysis: Even Supreme Court justices hostile to abortion may think twice before embracing the decision.</h4>
+                <p class="read">7 MIN READ</p></a>
+            </div>
+            <div class="d-lg-none col-6 col-sm-6 col-md-6 col4" >
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/health/abortion-pill-fda.html">
+                <h4>The ruling of mifepristone could spur other drug disputes, undermining the F.D.A.'s authority, experts said.</h4>
+                <p class="read">4 MIN READ</p></a>
+            </div>
+    </div>
+
+    <hr class="hroscuro ">
+
+    <!-- New 3 -->
+    <div class="row">
+        <div class="d-lg-none col-4 col-sm-4 col-md-4 col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/nashville-council-tennessee-lawmaker-jones.html">
+                <h5>Expelled Democratic Lawmaker Is Sworn Back in to Tennessee House</h5>
+                <p class="Noticia">The move to reappoint Representative Justin Jones was a swift rebuke to the Republican supermajority over its decision to expel him and another lawmaker</p>
+                <p> </p>
+                <p class="read">4 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/us/tennessee-house-democrats-expulsion-shooting-gun-control.html">
+                <h4>Here's what to know about the expulsion of Democratic lawmakers in Tennessee</h4></a>
+        </div>
+        <div class="d-lg-none col-8 col-sm-8 col-md-8 col4">
+            <iframe title="New York Times Video - Embed Player" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen="true" marginheight="0" marginwidth="0" id="nyt_video_player" src="https://www.nytimes.com/video/players/offsite/index.html?videoId=unknown"></iframe>
+            <figcaption class="piepag" align="right">The Associated Press and Reuters</figcaption>
+        </div>
+    </div>
+
+    <hr class="hroscuro">
+
+    <!-- New 4 -->
+    <div class="row">
+        <div class="d-lg-none col-4 col-sm-4 col-md-4 col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/classified-documents-leak.html">
+                <h5>Clues Left Online Might Aid Leak Investigation, Officials Say</h5>
+                <p class="Noticia">A large number of people potentially had access to the Pentagon intelligence documents posted on social media.</p>
+                <p> </p>
+                <p class="read">4 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/live/2023/04/11/world/russia-ukraine-news">
+                <h5>U.S. Sees Reporter as Russian Hostage, Opening Option of Prisoner Exchange</h5>
+                <p class="Noticia">The U.S. called Evan Gershkovich's arrest a wrongful detention, the same term applied to Brittney Griner, the W.N.B.A. star whom Rusiia released last year.</p></a>
+            <a class="updateslink" href="https://www.nytimes.com/live/2023/04/11/world/russia-ukraine-news">See new updates</a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/world/europe/russia-booby-traps-ukraine-war.html">
+                <h4>Finding land mines and lethal trip wires has become a dangerous art for Ukranian soldiers.</h4>
+                <p> </p>
+                <p class="read">4 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-8 col-sm-8 col-md-8 col4">
+            <img class="img-fluid" src="images/Noticia4.webp">
+            <figcaption class="piepag" align="right">Stefani Reynolds for The New York Times</figcaption>
+        </div>
+    </div>
+
+    <!-- New 5-->
+    <div class="row">
+        <hr class="hroscuro">
+        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/style/cars-touch-screens.html">
+            <img class="img-fluid" src="images/Noticia5.webp">
+            <figcaption class="piepag" align="right">BMW</figcaption>
+            <h2>Cool? Or Just Clunky? The Fight Over Dashboard Touch Screens.</h2>
+            <p class="Noticia">As luxury cars become rolling supercomputers, designers are wondering how big is too big.</p>
+            <p> </p>
+            <p class="read">5 MIN READ</p></a>
+    </div>
+    <hr>
+
+    <!-- News 6 and 7-->
+    <div class="row">
+        <div class="d-lg-none col-6 col-sm-6 col-md-6 col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/realestate/renters-upper-west-side-facebook-instagram.html">
+                <img class="img-fluid" src="images/Noticia6.webp">
+                <h4>How one family used Facebook and Instagram to find the perfect apartment</h4>
+                <p class="read">5 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-6 col-sm-6 col-md-6 col4">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/style/sonny-angels-dolls-tiktok.html">
+                <img class="img-fluid" src="images/Noticia7.webp">
+                <h4>Why do some people love this tiny doll from Japan?</h4>
+                <p class="read">4 MIN READ</p></a>
+        </div>
+    </div>
+    <hr class="hroscuro">
+
+
+    <div class="row">
+        <a class="opinion" href="https://www.nytimes.com/section/opinion">Opinion</a>
+    </div>
+    <div class="row">
+        <div class="d-lg-none col-4 col-sm-4 col-md-4 col3">
+        <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/opinion/paul-kagame-rwanda-britain.html">
+            <p class="nombre">ANJAN SUNDARAM</p>
+            <h5>He's a Brutal Dictator, and One of the West's Best Friends</h5>
+            <p class="read">4 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-4 col-sm-4 col-md-4 col3">
+        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/succession-logan-wealth.html">
+                <p class="nombre">MICHELLE GOLDBERG</p>
+                <h5>The Cold Truth at the Heart of 'Succession', Lyving on an Airplane Floor</h5>
+                <p class="read">4 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-4 col-md-4 col-sm-4 col4">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/succession-logan-wealth.html">
+            <img class="img-fluid" src="images/Noticia9.webp"></a>
+        </div>
+    </div>
+
+
+
+    <hr class="hroscuro">
+
+    <div class="row">
+        <p class="opinion">In Case You Missed It</p>
+        <cite class="subt">Top picks from The Times, recommended for you</cite>
+    </div>
+
+    <div class="row">
+        <div class="d-lg-none col-10 col-md-10 col-sd-10 col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/09/world/europe/ukraine-bakhmut-roads.html" >
+                <h4>Fight for Roads Into Bakhmut Has Hit a Stalemate, Ukraine Says</h4>
+                <p class="read">5 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-2 col-md-2 col-sd-2 col4">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/09/world/europe/ukraine-bakhmut-roads.html">
+                <img class="img-fluid" src="images/Noticia2.webp"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="d-lg-none col-10 col-md-10 col-sd-10 col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/magazine/peeps-factory.html" >
+                <h4>A Visit to the Peeps Factory</h4>
+                <p class="read">5 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none col-2 col-md-2 col-sd-2 col4">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/magazine/peeps-factory.html">
+                <img class="img-fluid" src="images/Noticia3.webp"></a>
+        </div>
+    </div>
+    <hr class="hroscuro d-lg-none col-12 col-sm-12 col-md-12">
+    <!-- to here (Medium, small and xsmall screen from here) -->
+
+    </div> <!--div of the first main row-->
+
+
+
+    <div class="row"> <!--Second main row big screen-->
+        <div class="col-lg-12 col-12 col-md-12 col-sm-12 col1" align="left">
+            <p class="opinion">More News</p>
+        </div>
+        <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col1" align="left">
+            <div class="row">
+                <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/oklahoma-catholic-charter-school.html">
+                        <h5>Nation's First Religious Charter School Could Be Coming to Oklahoma</h5>
+                        <p class="Noticia">If approved, the online Catholic school would be funded by taxpayer dollars, potentially teening up a high-profile legal battle</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                    <hr>
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/energy-environment/cars-electric-vehicles-epa.html">
+                        <h5>The Challenges Looming Over the U.S.'s Ambitious Electric Vehicle Goals</h5>
+                        <p class="Noticia">New federal rules are expected to speed the transition to E.V.s, a shift that car companies have embraced but will be challenged to carry out.</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-8 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <img class="img-fluid" src="images/Noticia8.webp" >
+                    <figcaption class="piepag" align="right">Sue Ogrocki/Associated OPress</figcaption>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/arts/myriam-ullens-dead.html">
+                        <h5>Myriam Ullens, Philanthropic Baroness With Disputed Fortune, Dies at 70</h5>
+                        <p class="Noticia">She started institutions in Belgium, Nepal and China, including a major museum in Beijing. A stepson was held on charges of shooting her over money.</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/asia/myanmar-airstrike.html">
+                        <h5>Airstrike in Rebel-Held Region of Myanmar Kills at Least 100</h5>
+                        <p class="Noticia">It was the junta's deadlist attack since seizing power in 2021, with the militery doubling down on its strategy of targeting civilians.</p>
+                        <p> </p>
+                        <p class="read">3 MIN READ</p></a>
+                </div>
+            </div>
+        </div> <!--div of the left column of the second main row-->
+
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col2">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/dealbook/bitcoin-price.html">
+            <h5>Bitcoin Rally Continues, Gaining More Than 80% This Year</h5>
+            <p class="read">1 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/louisville-bank-shooting.html">
+                <h5>What We Know About the Louisville, Ky., Bank Shooting</h5>
+                <p class="read">3 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/politics/tina-peters-clerk-colorado-sentenced.html">
+                <h5>Colorado Clerk Indicted in Election Case Is Sentenced in Separate Matter</h5>
+                <p class="read">2 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/europe/france-police-pension-protests.html">
+                <h5>French Police Face Scrutiny for Heavy Hand During Pension Protests</h5>
+                <p class="read">6 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/nashville-council-tennessee-lawmaker-jones.html">
+                <h5>Expelled Democratic Laawmaker Is Sworn Back In to Tennessee House</h5>
+                <p class="read">4 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/charles-leclerc-address-fans-f1.html">
+                <h5>Formula 1 Driver Charles Leclerc Asks Fans to Stop Coming to His Home</h5>
+                <p class="read">2 MIN READ</p></a>
+        </div> <!--div of the right column of the second main row-->
+
+    <!--Second row medium screen-->
+            <div class="row">
+                <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/oklahoma-catholic-charter-school.html">
+                        <h5>Nation's First Religious Charter School Could Be Coming to Oklahoma</h5>
+                        <p class="Noticia">If approved, the online Catholic school would be funded by taxpayer dollars, potentially teening up a high-profile legal battle</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                    <hr>
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/energy-environment/cars-electric-vehicles-epa.html">
+                        <h5>The Challenges Looming Over the U.S.'s Ambitious Electric Vehicle Goals</h5>
+                        <p class="Noticia">New federal rules are expected to speed the transition to E.V.s, a shift that car companies have embraced but will be challenged to carry out.</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="d-lg-none col-md-8 d-none d-sm-none d-md-block col4">
+                    <img class="img-fluid" src="images/Noticia8.webp" >
+                    <figcaption class="piepag" align="right">Sue Ogrocki/Associated OPress</figcaption>
+                </div>
+            </div>
+            <hr class="d-lg-none col-md-12 d-none d-sm-none d-md-block">
+            <div class="row">
+                <div class="d-lg-none col-md-6 d-none d-sm-none d-md-block col3">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/arts/myriam-ullens-dead.html">
+                        <h5>Myriam Ullens, Philanthropic Baroness With Disputed Fortune, Dies at 70</h5>
+                        <p class="Noticia">She started institutions in Belgium, Nepal and China, including a major museum in Beijing. A stepson was held on charges of shooting her over money.</p>
+                        <p> </p>
+                        <p class="read">5 MIN READ</p></a>
+                </div>
+                <div class="d-lg-none col-md-6 d-none d-sm-none d-md-block col4">
+                    <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/asia/myanmar-airstrike.html">
+                        <h5>Airstrike in Rebel-Held Region of Myanmar Kills at Least 100</h5>
+                        <p class="Noticia">It was the junta's deadlist attack since seizing power in 2021, with the militery doubling down on its strategy of targeting civilians.</p>
+                        <p> </p>
+                        <p class="read">3 MIN READ</p></a>
+                </div>
+            </div>
+        <hr class="d-lg-none col-md-12 d-none d-sm-none d-md-block">
+        <div class="row">
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/dealbook/bitcoin-price.html">
+                <h5>Bitcoin Rally Continues, Gaining More Than 80% This Year</h5>
+                <p class="read">1 MIN READ</p></a>
+            </div>
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/louisville-bank-shooting.html">
+                <h5>What We Know About the Louisville, Ky., Bank Shooting</h5>
+                <p class="read">3 MIN READ</p></a>
+            </div>
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/politics/tina-peters-clerk-colorado-sentenced.html">
+                <h5>Colorado Clerk Indicted in Election Case Is Sentenced in Separate Matter</h5>
+                <p class="read">2 MIN READ</p></a>
+            </div>
+        </div>
+        <hr class="d-lg-none col-md-12 d-none d-sm-none d-md-block">
+        <div class="row">
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/europe/france-police-pension-protests.html">
+                <h5>French Police Face Scrutiny for Heavy Hand During Pension Protests</h5>
+                <p class="read">6 MIN READ</p></a>
+            </div>
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/nashville-council-tennessee-lawmaker-jones.html">
+                <h5>Expelled Democratic Laawmaker Is Sworn Back In to Tennessee House</h5>
+                <p class="read">4 MIN READ</p></a>
+            </div>
+            <div class="d-lg-none col-md-4 d-none d-sm-none d-md-block col3">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/charles-leclerc-address-fans-f1.html">
+                <h5>Formula 1 Driver Charles Leclerc Asks Fans to Stop Coming to His Home</h5>
+                <p class="read">2 MIN READ</p></a>
+            </div>
+        </div>
+
+    <!--to here Second row medium screen -->
+
+    <!--Second row small and xsmall screen from here-->
+    <div class="row">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/energy-environment/cars-electric-vehicles-epa.html">
+                <h5>The Challenges Looming Over the U.S.'s Ambitious Electric Vehicle Goals</h5>
+                <p class="Noticia">New federal rules are expected to speed the transition to E.V.s, a shift that car companies have embraced but will be challenged to carry out.</p>
+                <p> </p>
+                <p class="read">5 MIN READ</p></a>
+            <hr>
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/oklahoma-catholic-charter-school.html">
+                <h5>Nation's First Religious Charter School Could Be Coming to Oklahoma</h5>
+                <p class="Noticia">If approved, the online Catholic school would be funded by taxpayer dollars, potentially teening up a high-profile legal battle</p>
+                <p> </p>
+                <p class="read">5 MIN READ</p></a>
+        </div>
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <img class="img-fluid" src="images/Noticia8.webp" >
+            <figcaption class="piepag" align="right">Sue Ogrocki/Associated OPress</figcaption>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/arts/myriam-ullens-dead.html">
+                <h5>Myriam Ullens, Philanthropic Baroness With Disputed Fortune, Dies at 70</h5>
+                <p class="Noticia">She started institutions in Belgium, Nepal and China, including a major museum in Beijing. A stepson was held on charges of shooting her over money.</p>
+                <p> </p>
+                <p class="read">5 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/asia/myanmar-airstrike.html">
+                <h5>Airstrike in Rebel-Held Region of Myanmar Kills at Least 100</h5>
+                <p class="Noticia">It was the junta's deadlist attack since seizing power in 2021, with the militery doubling down on its strategy of targeting civilians.</p>
+                <p> </p>
+                <p class="read">3 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/business/dealbook/bitcoin-price.html">
+                <h5>Bitcoin Rally Continues, Gaining More Than 80% This Year</h5>
+                <p class="read">1 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/louisville-bank-shooting.html">
+                <h5>What We Know About the Louisville, Ky., Bank Shooting</h5>
+                <p class="read">3 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/politics/tina-peters-clerk-colorado-sentenced.html">
+                <h5>Colorado Clerk Indicted in Election Case Is Sentenced in Separate Matter</h5>
+                <p class="read">2 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/world/europe/france-police-pension-protests.html">
+                <h5>French Police Face Scrutiny for Heavy Hand During Pension Protests</h5>
+                <p class="read">6 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/us/politics/nashville-council-tennessee-lawmaker-jones.html">
+                <h5>Expelled Democratic Laawmaker Is Sworn Back In to Tennessee House</h5>
+                <p class="read">4 MIN READ</p></a>
+        </div>
+        <hr class="d-lg-none d-md-none col-12 col-sm-12">
+        <div class="d-lg-none d-md-none col-12 col-sm-12 col1">
+            <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/us/charles-leclerc-address-fans-f1.html">
+                <h5>Formula 1 Driver Charles Leclerc Asks Fans to Stop Coming to His Home</h5>
+                <p class="read">2 MIN READ</p></a>
+        </div>
+    </div>
+
+        <!--to here (second row small and xsmall screen)-->
+
+    </div> <!--div of the second main row-->
+
+<hr>
+    <div class="row"> <!--third main row-->
+        <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+            <img class="img-fluid" src="images/Covid1.png" ></a>
+        </div>
+        <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+            <img class="img-fluid" src="images/Covid2.png" ></a>
+        </div>
+        <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+            <img class="img-fluid" src="images/Covid3.png" ></a>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+            <img class="img-fluid" src="images/Covid4.png" ></a>
+        </div>
+        <div class="col-lg-1 d-none d-sm-none d-md-none d-lg-block d-xl-block col1" align="center middle">
+            <div class="row">
+                <aside class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block covid" align="right">
+                    <a class="buttoncovid" href="https://www.nytimes.com/interactive/2023/us/covid-personalized-tracker.html">Your Places</a>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block covid" align="right">
+                    <a class="buttoncovid" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">United States</a>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block covid" align="right">
+                    <a class="buttoncovid" href="https://www.nytimes.com/news-event/coronavirus">Covid-19 Cover</a>
+                </aside>
+            </div>
+        </div>
+    <p class="pie col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block"  align="left">Source: Centers for Disease Control and Prevention</p>
+
+
+
+    <!--Third row medium screen from here-->
+        <div class="d-lg-none col-md-4 d-sm-none d-none d-md-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                <img class="img-fluid" src="images/Covid1.png" ></a>
+        </div>
+        <div class="d-lg-none col-md-4 d-sm-none d-none d-md-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                <img class="img-fluid" src="images/Covid3.png" ></a>
+        </div>
+        <div class="d-lg-none col-md-2 d-sm-none d-none d-md-block col1">
+            <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                <img class="img-fluid" src="images/Covid4.png" ></a>
+        </div>
+        <div class="d-lg-none col-md-2 d-sm-none d-md-block col1" align="center middle">
+            <div class="row">
+                <aside class="col-md d-none d-sm-none d-lg-none d-md-block covid" align="right">
+                    <a class="buttoncovid" href="https://www.nytimes.com/interactive/2023/us/covid-personalized-tracker.html">Your Places</a>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-md d-none d-sm-none d-lg-none d-md-block covid" align="right">
+                    <a class="buttoncovid" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">United States</a>
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-md d-none d-sm-none d-lg-none d-md-block covid" align="right>
+                    <a class="buttoncovid" href="https://www.nytimes.com/news-event/coronavirus">Covid-19 Cover</a>
+                </aside>
+            </div>
+        </div>
+        <p class="pie d-lg-none d-none d-sm-none col-md d-md-block "  align="left">Source: Centers for Disease Control and Prevention</p>
+    <!--to here (third row medium screen)-->
+
+
+        <!--Third row small screen from here-->
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                    <img class="img-fluid" src="images/Covid1.png" ></a>
+            </div>
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                    <img class="img-fluid" src="images/Covid3.png" ></a>
+            </div>
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                    <img class="img-fluid" src="images/Covid4.png" ></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                    <a class="covid2 buttoncovid text-center" href="https://www.nytimes.com/interactive/2023/us/covid-personalized-tracker.html">Your Places</a>
+            </div>
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                    <a class="covid2 buttoncovid text-center" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">United States</a>
+            </div>
+            <div class="d-lg-none d-md-none col-sm-4 d-none d-sm-block col1">
+                    <a class="covid2 buttoncovid text-center" href="https://www.nytimes.com/news-event/coronavirus">Covid-19 Cover</a>
+            </div>
+        </div>
+        <p class="pie d-lg-none d-md-none col-sm-12 d-none d-sm-block"  align="left">Source: Centers for Disease Control and Prevention</p>
+        <!--to here (third row small screen)-->
+
+        <!--third row xsmall screen from here-->
+            <div class="d-lg-none d-md-none d-sm-none col-12 col1">
+                <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                    <img class="img-fluid" src="images/Covid1.png" ></a>
+            </div>
+            <div class="d-lg-none d-md-none d-sm-none col-12 col1">
+                <a class="nonstyle" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">
+                    <img class="img-fluid" src="images/Covid3.png" ></a>
+            </div>
+        <div class="row">
+            <div class="d-lg-none d-md-none d-sm-none col-6 col1">
+                <a class="container-fluid covid2 buttoncovid text-center" href="https://www.nytimes.com/interactive/2023/us/covid-personalized-tracker.html">Your Places</a>
+            </div>
+            <div class="d-lg-none d-md-none d-sm-none col-6 col1">
+                <a class="container-fluid covid2 buttoncovid text-center" href="https://www.nytimes.com/interactive/2023/us/covid-cases.html">United States</a>
+            </div>
+        </div>
+        <p class="pie d-lg-none d-md-none d-sm-none col-12"  align="left">Source: Centers for Disease Control and Prevention</p>
+
+        <!--to here (third row xsmall screen)-->
+
+      </div> <!--div of the third main row-->
+
+
+<hr class="hroscuro col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+
+    <div class="row"> <!--Forth main row big screen from here-->
+        <div class="row">
+            <div class="col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+                <p class="opinion">Ner York Times Games<cite class="subt">  Daily word and visual games, plus more.</cite></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                        <h4>Wordle</h4>
+                        <p class="Noticia">Guess the 5-letter word with 6 chances.</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                        <img class="img-fluid" src="images/Game1.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <h4>Today's Wordle Review</h4>
+                            <p class="Noticia">Priya Krishna reviews the day's puzzle. Warning: contains spoilers!</p>
+                            <p class="read">2 MIN READ</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <img class="img-fluid" src="images/Game2.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <h4>Digits|Beta</h4>
+                            <p class="Noticia">Challenge yourself with a daily numbers puzzle.</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <img class="img-fluid" src="images/Game3.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                            <h4>Spelling Bee</h4>
+                            <p class="Noticia">How many words can you make with 7 letters?</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                        <img class="img-fluid" src="images/Game4.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                        <h4>The Crossword</h4>
+                        <p class="Noticia">Get clued in with wordplay, every day.</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                        <img class="img-fluid" src="images/Game5.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <div class="row">
+                    <div class="col-lg-9 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                        <h4>Letter Boxed</h4>
+                        <p class="Noticia">Create words using letters arround the square.</p></a>
+                    </div>
+                    <div class="col-lg-3 d-none d-sm-none d-md-none d-lg-block d-xl-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                        <img class="img-fluid" src="images/Game6.webp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--Forth row medium screen from here-->
+        <div class="row">
+            <div class="d-lg-none d-none d-sm-none col-md-12 d-md-block col1">
+                <hr class="hroscuro">
+                <p class="opinion">Ner York Times Games<cite class="subt">  Daily word and visual games, plus more.</cite></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                            <h4>Wordle</h4>
+                            <p class="Noticia">Guess the 5-letter word with 6 chances.</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                            <img class="img-fluid" src="images/Game1.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <h4>Today's Wordle Review</h4>
+                            <p class="Noticia">Priya Krishna reviews the day's puzzle. Warning: contains spoilers!</p>
+                            <p class="read">2 MIN READ</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <img class="img-fluid" src="images/Game2.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-none d-sm-none col-md-12 d-md-block">
+        <div class="row">
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <h4>Digits|Beta</h4>
+                            <p class="Noticia">Challenge yourself with a daily numbers puzzle.</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <img class="img-fluid" src="images/Game3.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                            <h4>Spelling Bee</h4>
+                            <p class="Noticia">How many words can you make with 7 letters?</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                            <img class="img-fluid" src="images/Game4.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-none d-sm-none col-md-12 d-md-block">
+        <div class="row">
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                            <h4>The Crossword</h4>
+                            <p class="Noticia">Get clued in with wordplay, every day.</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                            <img class="img-fluid" src="images/Game5.webp" ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none d-none d-sm-none col-md-6 d-md-block col3">
+                <div class="row">
+                    <div class="d-lg-none d-none d-sm-none col-md-9 d-md-block col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                            <h4>Letter Boxed</h4>
+                            <p class="Noticia">Create words using letters arround the square.</p></a>
+                    </div>
+                    <div class="d-lg-none d-none d-sm-none col-md-3 d-md-block col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                            <img class="img-fluid" src="images/Game6.webp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- to here (medium screen forth row)-->
+
+    <!--forth row small and xsmall screen from here-->
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <hr class="hroscuro">
+                <p class="opinion">Ner York Times Games</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <cite class="subt">  Daily word and visual games, plus more.</cite>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                            <h4>Wordle</h4>
+                            <p class="Noticia">Guess the 5-letter word with 6 chances.</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/wordle/index.html">
+                            <img class="img-fluid" src="images/Game1.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-md-none col-sm-12 col-12">
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <h4>Today's Wordle Review</h4>
+                            <p class="Noticia">Priya Krishna reviews the day's puzzle. Warning: contains spoilers!</p>
+                            <p class="read">2 MIN READ</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/crosswords/wordle-review-answer-660.html">
+                            <img class="img-fluid" src="images/Game2.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-md-none col-sm-12 col-12">
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <h4>Digits|Beta</h4>
+                            <p class="Noticia">Challenge yourself with a daily numbers puzzle.</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/games/digits">
+                            <img class="img-fluid" src="images/Game3.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-md-none col-sm-12 col-12">
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                            <h4>Spelling Bee</h4>
+                            <p class="Noticia">How many words can you make with 7 letters?</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/spelling-bee">
+                            <img class="img-fluid" src="images/Game4.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-md-none col-sm-12 col-12">
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                            <h4>The Crossword</h4>
+                            <p class="Noticia">Get clued in with wordplay, every day.</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/crosswords">
+                            <img class="img-fluid" src="images/Game5.webp" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="d-lg-none d-md-none col-sm-12 col-12">
+        <div class="row">
+            <div class="d-lg-none d-md-none col-sm-12 col-12 col1">
+                <div class="row">
+                    <div class="d-lg-none d-md-none col-sm-10 col-10 col3">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                            <h4>Letter Boxed</h4>
+                            <p class="Noticia">Create words using letters arround the square.</p></a>
+                    </div>
+                    <div class="d-lg-none d-md-none col-sm-2 col-2 col4">
+                        <a class="nonstyle" href="https://www.nytimes.com/puzzles/letter-boxed">
+                            <img class="img-fluid" src="images/Game6.webp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--to here (forth row small and xsmall screen)-->
+
+    </div><!--div of the forth main row-->
+<p> </p>
+<hr class="hrdoble col-lg-12 d-none d-sm-none col-md-12 d-md-block d-lg-block d-xl-block">
+<hr class="segundohr col-lg-12 d-none d-sm-none col-md-12 d-md-block d-lg-block d-xl-block">
+<p>  </p>
+
+
+    <!--Fifth main row-->
+
+    <div class="row g-1">
+        <!--Fifth main row big screen from here-->
+        <div class="row">
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+                <p class="opinion">OPINION</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Opinion</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/14/opinion/china-america-relationship.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><img class="img-fluid-cinco" src="images/Cinco10.webp">
+                <p class="NoticiaOscura">What Are America and China Fighting About, Anyway?</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/how-immigrants-are-saving-the-economy.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">How Immigrants Are Saving the Economy</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/sun-belt-migration.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">Why People Are Fleeing Blue Cities for Red States</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/columnists?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Opinion Columnists</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/how-immigrants-are-saving-the-economy.html?action=click&module=Well&pgtype=Homepage&section=Opinion%20Columnists"><img class="img-fluid-cinco" src="images/Cinco11.webp">
+                <p class="NoticiaOscura">How Immigrants Are Saving the Economy</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/14/opinion/china-america-relationship.html?action=click&module=Well&pgtype=Homepage&section=Opinion%20Columnists">What Are America and China Fighting About, Anyway?<p class="NoticiaOscura"></p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/sun-belt-migration.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">Why People Are Fleeing Blue Cities for Red States</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/editorials?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Editorials</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/opinion/tennessee-justin-house-expulson.html?action=click&module=Well&pgtype=Homepage&section=Editorials"><img class="img-fluid-cinco" src="images/Cinco12.webp">
+                    <p class="NoticiaOscura">An Undemocratic Power Play in Tennessee</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/biden-northern-ireland.html?action=click&module=Well&pgtype=Homepage&section=Editorials">Biden's Trip to Northern Ireland and the Power of Diplomacy<p class="NoticiaOscura"></p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/opinion/evan-gershkovich-wsj-reporter.html?action=click&module=Well&pgtype=Homepage&section=Editorials"><p class="NoticiaOscura">The Arrest of Evan Gershkovich Is Further Evidence of Putin's Brutality</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/contributors?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Guest Essays</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/tucker-carlson-murdoch-fox.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><img class="img-fluid-cinco" src="images/Cinco13.webp">
+                <p class="NoticiaOscura">Tucker Carlson and Rupert Murdoch Were Right</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/supreme-court-nine-black-robes-biskupic.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><p class="NoticiaOscura">In Which Conservative Justices Ponder Just How Far They Will Go</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/email-time-work-stress.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><p class="NoticiaOscura">Your Email Does Not Constitute My Emergency</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/sunday?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Sunday Opinion</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/street-scenes-from-trumps-arraignment.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><img class="img-fluid-cinco" src="images/Cinco14.webp">
+                    <p class="NoticiaOscura">Street Scenes From Trump's Arraignment</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/fire-department-laura-kavanagh.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><p class="NoticiaOscura">A Tale of Fire and Ice</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/aids-pepfar-bush.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><p class="NoticiaOscura">When George W.Bush Was a Hero</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col1">
+                <p class="opinion">ARTS</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Arts</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/dance/miguel-gutierrez.html?action=click&module=Well&pgtype=Homepage&section=Arts"><img class="img-fluid-cinco" src="images/Cinco1.webp">
+                <p class="NoticiaOscura">Boom Times for Miguel Gutierrez, and Artist Ordered Excess</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/fat-ham-review.html?action=click&module=Well&pgtype=Homepage&section=Arts"><p class="NoticiaOscura">Review: Shewering Masculinity, in a Hot and Sizzling 'Fat Ham'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/movies/beau-is-afraid-review-ari-aster.html?action=click&module=Well&pgtype=Homepage&section=Arts"><p class="NoticiaOscura">'Beau Is Afraid' Review: A Visit With Moomy Dearest</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/design?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Art and Design</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/design/cecily-brown-metropolitan-museum-painter.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><img class="img-fluid-cinco" src="images/Cinco2.webp">
+                <p class="NoticiaOscura">In Chinese Photography, Political Anguish Made Physical</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/arts/design/chinese-photography-1990s-hirshhorn.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><p class="NoticiaOscura">Met Museum Commissions to Bring Contemporany Art Front and Center</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/design/gallery-bushwick-international-objects.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><p class="NoticiaOscura">Portrait of the Artist as an Investment Opportunity</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/movies?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Movies</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/movies/beau-is-afraid-review-ari-aster.html?action=click&module=Well&pgtype=Homepage&section=Movies"><img class="img-fluid-cinco" src="images/Cinco3.webp">
+                <p class="NoticiaOscura">'Beau Is Afraid' Review: A Visit With Moomy Dearest</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/movies/cannes-film-festival-lineup-2023.html?action=click&module=Well&pgtype=Homepage&section=Movies"><p class="NoticiaOscura">Wes Anderson and Todd Haynes to Complete at Cannes Film Festival</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/movies/de-humani-corporis-fabrica-review.html?action=click&module=Well&pgtype=Homepage&section=Movies"><p class="NoticiaOscura">'De Humani Corporis Fabrica' Review: Showing What We're Made Of</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/television?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Television</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/television/the-last-thing-he-told-me-reese-witherspoon.html?action=click&module=Well&pgtype=Homepage&section=Television"><img class="img-fluid-cinco" src="images/Cinco4.webp">
+                <p class="NoticiaOscura">Expanding the Witherspoon Television Universe</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/television/jane-goodall-apple-tv-series.html?action=click&module=Well&pgtype=Homepage&section=Television"><p class="NoticiaOscura">Inspired by Jane Goodall, Onscreen and in Real Life</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/business/media/harry-potter-tv-show-max.html?action=click&module=Well&pgtype=Homepage&section=Television"><p class="NoticiaOscura">'Harry Potter' Become a TV Series</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/music?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Music</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/music/feist-multitudes-review.html?action=click&module=Well&pgtype=Homepage&section=Music"><img class="img-fluid-cinco" src="images/Cinco5.webp">
+                <p class="NoticiaOscura">On Feist's 'Multitudes,' Tranquillity Is Shadowed by Disquiet</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/arts/music/review-champion-blanchard-met-opera.html?action=click&module=Well&pgtype=Homepage&section=Music"><p class="NoticiaOscura">Review: 'Champion,' at yhe Met Opera, Spars with History</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/arts/music/rita-indiana-tu-nombre-verdadero.html?action=click&module=Well&pgtype=Homepage&section=Music"><p class="NoticiaOscura">In Her New Show, Rita Indiana Confronts All King of Ghosts</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/theater?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Theater</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/fat-ham-review.html?action=click&module=Well&pgtype=Homepage&section=Theater"><img class="img-fluid-cinco" src="images/Cinco6.webp">
+                <p class="NoticiaOscura">Review: Skewering Masculinity, in a Hot and Sizzling 'Fat Ham'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/jodie-comer-prima-facie-killing-eve.html?action=click&module=Well&pgtype=Homepage&section=Theater"><p class="NoticiaOscura">In 'Prima Fcaie', Jodie Comer finds Her Light</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/theater/review-white-girl-in-danger.html?action=click&module=Well&pgtype=Homepage&section=Theater"><p class="NoticiaOscura">Review: 'White Girl in Danger' Flips the Scipr on Soap Operas</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/dance?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Dance</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/07/arts/dance/tiktok-dance-evolution.html?action=click&module=Well&pgtype=Homepage&section=Dance"><img class="img-fluid-cinco" src="images/Cinco7.webp">
+                <p class="NoticiaOscura">TikTok is Dead (Maybe). Long Live TikTok Dance.</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/dance/miguel-gutierrez.html?action=click&module=Well&pgtype=Homepage&section=Dance"><p class="NoticiaOscura">Boom Times for Miguel Gutierrez, an Artist of Ordered Excess</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/07/arts/dance/review-faye-driscoll-weathering.html?action=click&module=Well&pgtype=Homepage&section=Dance"><p class="NoticiaOscura">Review: On Faye Driscoll's Life Raft, Spinning Toward the Unknown</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/books?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Books</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/books/david-grann-the-wager.html?action=click&module=Well&pgtype=Homepage&section=Books"><img class="img-fluid-cinco" src="images/Cinco8.webp">
+                <p class="NoticiaOscura">A Swashbuckling Tale of Mutiny Took Him Where 'the Soul of Man Dies'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/books/review/above-ground-clint-smith.html?action=click&module=Well&pgtype=Homepage&section=Books"><p class="NoticiaOscura">Clint Smith's Back-to-Back, Genre-Spanning Best Sellers</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/books/review/10-new-books-we-recommend-this-week.html?action=click&module=Well&pgtype=Homepage&section=Books"><p class="NoticiaOscura">10 New Books We Recommend This Week</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/books/review?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Book Review</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/books/review/charleston-susan-crawford.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><img class="img-fluid-cinco" src="images/Cinco9.webp">
+                <p class="NoticiaOscura">The Unequal Racial Burdens of Rising Seas</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/books/review/charles-frazier-by-the-book-interview.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><p class="NoticiaOscura">Charles Frazier Wants You to Wait Before Reading the Classics</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/books/review/the-secret-diaries-of-charles-ignatius-sancho.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><p class="NoticiaOscura">The Picaresque Life of an 18th-Century Black English Polymath</p></a>
+            </div>
+            <div class="col-lg d-none d-sm-none d-md-none d-lg-block d-xl-block col3">
+            </div>
+        </div>
+        <!--to here (Fifth main row big screen) -->
+
+        <!--Fifth row medium screen from here-->
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col1">
+                <p class="opinion">OPINION</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Opinion</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/14/opinion/china-america-relationship.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><img class="img-fluid-cinco" src="images/Cinco10.webp">
+                    <p class="NoticiaOscura">What Are America and China Fighting About, Anyway?</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/how-immigrants-are-saving-the-economy.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">How Immigrants Are Saving the Economy</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/sun-belt-migration.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">Why People Are Fleeing Blue Cities for Red States</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block  col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/columnists?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Opinion Columnists</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/how-immigrants-are-saving-the-economy.html?action=click&module=Well&pgtype=Homepage&section=Opinion%20Columnists"><img class="img-fluid-cinco" src="images/Cinco11.webp">
+                    <p class="NoticiaOscura">How Immigrants Are Saving the Economy</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/14/opinion/china-america-relationship.html?action=click&module=Well&pgtype=Homepage&section=Opinion%20Columnists">What Are America and China Fighting About, Anyway?<p class="NoticiaOscura"></p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/sun-belt-migration.html?action=click&module=Well&pgtype=Homepage&section=Opinion"><p class="NoticiaOscura">Why People Are Fleeing Blue Cities for Red States</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block  col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/editorials?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Editorials</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/opinion/tennessee-justin-house-expulson.html?action=click&module=Well&pgtype=Homepage&section=Editorials"><img class="img-fluid-cinco" src="images/Cinco12.webp">
+                    <p class="NoticiaOscura">An Undemocratic Power Play in Tennessee</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/opinion/biden-northern-ireland.html?action=click&module=Well&pgtype=Homepage&section=Editorials">Biden's Trip to Northern Ireland and the Power of Diplomacy<p class="NoticiaOscura"></p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/opinion/evan-gershkovich-wsj-reporter.html?action=click&module=Well&pgtype=Homepage&section=Editorials"><p class="NoticiaOscura">The Arrest of Evan Gershkovich Is Further Evidence of Putin's Brutality</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/contributors?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Guest Essays</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/tucker-carlson-murdoch-fox.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><img class="img-fluid-cinco" src="images/Cinco13.webp">
+                    <p class="NoticiaOscura">Tucker Carlson and Rupert Murdoch Were Right</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/supreme-court-nine-black-robes-biskupic.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><p class="NoticiaOscura">In Which Conservative Justices Ponder Just How Far They Will Go</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/opinion/email-time-work-stress.html?action=click&module=Well&pgtype=Homepage&section=Guest%20Essays"><p class="NoticiaOscura">Your Email Does Not Constitute My Emergency</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/opinion/sunday?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Sunday Opinion</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/street-scenes-from-trumps-arraignment.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><img class="img-fluid-cinco" src="images/Cinco14.webp">
+                    <p class="NoticiaOscura">Street Scenes From Trump's Arraignment</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/fire-department-laura-kavanagh.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><p class="NoticiaOscura">A Tale of Fire and Ice</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/08/opinion/aids-pepfar-bush.html?action=click&module=Well&pgtype=Homepage&section=Sunday%20Opinion"><p class="NoticiaOscura">When George W.Bush Was a Hero</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col1">
+                <p class="opinion">ARTS</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Arts</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/dance/miguel-gutierrez.html?action=click&module=Well&pgtype=Homepage&section=Arts"><img class="img-fluid-cinco" src="images/Cinco1.webp">
+                    <p class="NoticiaOscura">Boom Times for Miguel Gutierrez, and Artist Ordered Excess</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/fat-ham-review.html?action=click&module=Well&pgtype=Homepage&section=Arts"><p class="NoticiaOscura">Review: Shewering Masculinity, in a Hot and Sizzling 'Fat Ham'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/movies/beau-is-afraid-review-ari-aster.html?action=click&module=Well&pgtype=Homepage&section=Arts"><p class="NoticiaOscura">'Beau Is Afraid' Review: A Visit With Moomy Dearest</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/design?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Art and Design</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/design/cecily-brown-metropolitan-museum-painter.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><img class="img-fluid-cinco" src="images/Cinco2.webp">
+                    <p class="NoticiaOscura">In Chinese Photography, Political Anguish Made Physical</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/arts/design/chinese-photography-1990s-hirshhorn.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><p class="NoticiaOscura">Met Museum Commissions to Bring Contemporany Art Front and Center</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/design/gallery-bushwick-international-objects.html?action=click&module=Well&pgtype=Homepage&section=Art%20and%20Design"><p class="NoticiaOscura">Portrait of the Artist as an Investment Opportunity</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/movies?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Movies</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/movies/beau-is-afraid-review-ari-aster.html?action=click&module=Well&pgtype=Homepage&section=Movies"><img class="img-fluid-cinco" src="images/Cinco3.webp">
+                    <p class="NoticiaOscura">'Beau Is Afraid' Review: A Visit With Moomy Dearest</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/movies/cannes-film-festival-lineup-2023.html?action=click&module=Well&pgtype=Homepage&section=Movies"><p class="NoticiaOscura">Wes Anderson and Todd Haynes to Complete at Cannes Film Festival</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/movies/de-humani-corporis-fabrica-review.html?action=click&module=Well&pgtype=Homepage&section=Movies"><p class="NoticiaOscura">'De Humani Corporis Fabrica' Review: Showing What We're Made Of</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/television?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Television</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/television/the-last-thing-he-told-me-reese-witherspoon.html?action=click&module=Well&pgtype=Homepage&section=Television"><img class="img-fluid-cinco" src="images/Cinco4.webp">
+                    <p class="NoticiaOscura">Expanding the Witherspoon Television Universe</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/television/jane-goodall-apple-tv-series.html?action=click&module=Well&pgtype=Homepage&section=Television"><p class="NoticiaOscura">Inspired by Jane Goodall, Onscreen and in Real Life</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/business/media/harry-potter-tv-show-max.html?action=click&module=Well&pgtype=Homepage&section=Television"><p class="NoticiaOscura">'Harry Potter' Become a TV Series</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/music?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Music</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/music/feist-multitudes-review.html?action=click&module=Well&pgtype=Homepage&section=Music"><img class="img-fluid-cinco" src="images/Cinco5.webp">
+                    <p class="NoticiaOscura">On Feist's 'Multitudes,' Tranquillity Is Shadowed by Disquiet</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/arts/music/review-champion-blanchard-met-opera.html?action=click&module=Well&pgtype=Homepage&section=Music"><p class="NoticiaOscura">Review: 'Champion,' at yhe Met Opera, Spars with History</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/arts/music/rita-indiana-tu-nombre-verdadero.html?action=click&module=Well&pgtype=Homepage&section=Music"><p class="NoticiaOscura">In Her New Show, Rita Indiana Confronts All King of Ghosts</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/theater?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Theater</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/fat-ham-review.html?action=click&module=Well&pgtype=Homepage&section=Theater"><img class="img-fluid-cinco" src="images/Cinco6.webp">
+                    <p class="NoticiaOscura">Review: Skewering Masculinity, in a Hot and Sizzling 'Fat Ham'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/theater/jodie-comer-prima-facie-killing-eve.html?action=click&module=Well&pgtype=Homepage&section=Theater"><p class="NoticiaOscura">In 'Prima Fcaie', Jodie Comer finds Her Light</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/theater/review-white-girl-in-danger.html?action=click&module=Well&pgtype=Homepage&section=Theater"><p class="NoticiaOscura">Review: 'White Girl in Danger' Flips the Scipr on Soap Operas</p></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/arts/dance?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Dance</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/07/arts/dance/tiktok-dance-evolution.html?action=click&module=Well&pgtype=Homepage&section=Dance"><img class="img-fluid-cinco" src="images/Cinco7.webp">
+                    <p class="NoticiaOscura">TikTok is Dead (Maybe). Long Live TikTok Dance.</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/arts/dance/miguel-gutierrez.html?action=click&module=Well&pgtype=Homepage&section=Dance"><p class="NoticiaOscura">Boom Times for Miguel Gutierrez, an Artist of Ordered Excess</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/07/arts/dance/review-faye-driscoll-weathering.html?action=click&module=Well&pgtype=Homepage&section=Dance"><p class="NoticiaOscura">Review: On Faye Driscoll's Life Raft, Spinning Toward the Unknown</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/books?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Books</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/12/books/david-grann-the-wager.html?action=click&module=Well&pgtype=Homepage&section=Books"><img class="img-fluid-cinco" src="images/Cinco8.webp">
+                    <p class="NoticiaOscura">A Swashbuckling Tale of Mutiny Took Him Where 'the Soul of Man Dies'</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/books/review/above-ground-clint-smith.html?action=click&module=Well&pgtype=Homepage&section=Books"><p class="NoticiaOscura">Clint Smith's Back-to-Back, Genre-Spanning Best Sellers</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/06/books/review/10-new-books-we-recommend-this-week.html?action=click&module=Well&pgtype=Homepage&section=Books"><p class="NoticiaOscura">10 New Books We Recommend This Week</p></a>
+            </div>
+            <div class="col-md d-none d-sm-none d-lg-none d-md-block col3">
+                <a class="nonstyle" href="https://www.nytimes.com/ca/section/books/review?action=click&module=Well&pgtype=Homepage"><p class="titimagen">Book Review</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/10/books/review/charleston-susan-crawford.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><img class="img-fluid-cinco" src="images/Cinco9.webp">
+                    <p class="NoticiaOscura">The Unequal Racial Burdens of Rising Seas</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/13/books/review/charles-frazier-by-the-book-interview.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><p class="NoticiaOscura">Charles Frazier Wants You to Wait Before Reading the Classics</p></a>
+                <a class="nonstyle" href="https://www.nytimes.com/2023/04/11/books/review/the-secret-diaries-of-charles-ignatius-sancho.html?action=click&module=Well&pgtype=Homepage&section=Book%20Review"><p class="NoticiaOscura">The Picaresque Life of an 18th-Century Black English Polymath</p></a>
+            </div>
+        </div>
+        <!--to here (Fifth row medium screen) -->
+
+    </div><!--div of the fifth main row-->
+
+</section>
+
+
+<footer>
+
+<!--Footer big screen-->
+    <div class="row">
+        <div class="col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <hr class="hrgris">
+            <hr class="hrgrisdoble">
+            <p class="TNYT">The New York Times</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">NEWS</p>
+            <nav id="catogorias_container"><ul>
+                <li><a class="categorias" href="https://www.nytimes.com/">Home page</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/world">World</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/news-event/coronavirus">Coronavirus</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/us">U.S.</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/politics">Politics</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/nyregion">New York</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/business">Business</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/technology">Tech</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/science">Science</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/sports">Sports</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/interactive/2022/us/fire-tracker-maps.html">Wildfire Tracker</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/obituaries">Obituaries</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/todayspaper">Today's paper</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/corrections">Corrections</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/trending/">Trending</a></li>
+                </ul>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">OPINION</p>
+            <nav id="categorias_container"><ul>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion">Today´s Opinion</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion/columnists">Columnists</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion/editorials">Editorials</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion/contributors">Guests Essays</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion/letters">Letters</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/opinion/sunday">Sunday Opinion</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/spotlight/opinion-video">Opinion Video</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">ARTS</p>
+            <nav id="categorias_container"><ul>
+                <li><a class="categorias" href="https://www.nytimes.com/section/arts">Today's Arts</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/arts/design">Art & Design</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/books">Books</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/books/best-sellers/">Best Sellers Book List</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/arts/dance">Dance</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/movies">Movies</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/arts/music">Music</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/spotlight/pop-culture">Pop Culture</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/arts/television">Television</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/theater">Theater</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/video/arts">Video: Arts</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">LIVING</p>
+            <nav id="categorias_container"><ul>
+                <li><a class="categorias" href="https://www.nytimes.com/section/automobiles">Automotive</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/crosswords">Games</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/education">Eduation</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/food">Food</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/health">Health</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/jobs">Jobs</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/fashion/weddings">Love</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/magazine">Magazine</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/parenting">Parenting</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/realestate">Real Estate</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/style">Style</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/t-magazine">T Magazine</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/travel">Travel</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">MORE</p>
+            <nav id="categorias_container"><ul>
+                <li><a class="categorias" href="https://www.nytimes.com/section/reader-center">Reader Center</a></li>
+                <li><a class="categorias" href="https://theathletic.com/uk/">The Athletic</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/wirecutter/">Wirecutter</a></li>
+                <li><a class="categorias" href="https://cooking.nytimes.com/">Cooking</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/headway">Headway</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/spotlight/nyt-events">Live Events</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/section/learning">The Learning Network</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/subscription/info/tools-and-services">Tools & Services</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/spotlight/podcasts">Podcasts</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/video">Video</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/spotlight/graphics">Graphics</a></li>
+                <li><a class="categorias" href="https://timesmachine.nytimes.com/browser">TimesMachine</a></li>
+                <li><a class="categorias" href="https://store.nytimes.com/">Times Store</a></li>
+                <li><a class="categorias" href="https://www.nytimes.com/account">Manage My Account</a></li>
+                <li><a class="categorias" href="https://nytlicensing.com/">NYTLicensing</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+            <p class="opinion">SUBSCRIBE</p>
+            <nav id="categorias_container"><ul>
+                <li><a class="categorias2" href="https://subscribe.inyt.com/?utm_source=NYTimes.com&utm_medium=web&utm_campaign=footer&campaignId=6UXKJ"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21 5c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V5zM5 19V5h14l.002 14H5z"></path><path d="M7 7h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6zm-4 4h1.998v2H7zm4 0h6v2h-6z"></path></svg>Home Delivery</a></li>
+                <li><a class="categorias2" href="https://www.nytimes.com/subscription?campaignId=6UXKY"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M12.005 21.992v-3.877c4.104 0 7.288-4.068 5.714-8.388a5.81 5.81 0 0 0-3.457-3.446c-4.319-1.563-8.389 1.61-8.389 5.714H2.008c0-6.541 6.325-11.642 13.184-9.499 2.991.94 5.383 3.321 6.313 6.313 2.141 6.858-2.96 13.183-9.5 13.183z"></path><path d="M12.017 18.139H8.152v-3.866h3.865zm-3.865 2.959H5.193v-2.959h2.959zm-2.959-2.959H2.711v-2.483h2.482v2.483z"></path></svg>Digital Subscriptions</a></li>
+                <li><a class="categorias2" href="https://www.nytimes.com/subscription/games?campaignId=9LRLQ"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21 6c0-1.654-1.346-3-3-3a2.993 2.993 0 0 0-2.815 2h-6.37A2.993 2.993 0 0 0 6 3C4.346 3 3 4.346 3 6c0 1.302.839 2.401 2 2.815v6.369A2.997 2.997 0 0 0 3 18c0 1.654 1.346 3 3 3a2.993 2.993 0 0 0 2.815-2h6.369a2.994 2.994 0 0 0 2.815 2c1.654 0 3-1.346 3-3a2.997 2.997 0 0 0-2-2.816V8.816A2.996 2.996 0 0 0 21 6zm-3-1a1.001 1.001 0 1 1-1 1c0-.551.448-1 1-1zm-2.815 12h-6.37A2.99 2.99 0 0 0 7 15.184V8.816A2.99 2.99 0 0 0 8.815 7h6.369A2.99 2.99 0 0 0 17 8.815v6.369A2.99 2.99 0 0 0 15.185 17zM6 5a1.001 1.001 0 1 1-1 1c0-.551.448-1 1-1zm0 14a1.001 1.001 0 0 1 0-2 1.001 1.001 0 0 1 0 2zm12 0a1.001 1.001 0 0 1 0-2 1.001 1.001 0 0 1 0 2z"></path></svg>Games</a></li>
+                <li><a class="categorias2" href="https://www.nytimes.com/subscription/cooking.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m14.47 13.77-1.41-1.42 5.66-5.65-1.42-1.42-5.65 5.66-1.42-1.41 5.66-5.66-1.42-1.42-6.36 6.37a3 3 0 0 0 0 4.24l.71.71-6.37 6.36 1.42 1.42 6.36-6.37.71.71a3 3 0 0 0 4.24 0l6.37-6.36-1.42-1.42z"></path></svg>Cooking</a></li>
+
+                <li><a class="categorias3" href="https://www.nytimes.com/newsletters">Email Newsletters</a></li>
+                <li><a class="categorias3" href="https://www.nytimes.com/subscription/groups">Corporate Subscriptions</a></li>
+                <li><a class="categorias3" href="https://www.nytimes.com/subscription?campaignId=4X986">Education Rate</a></li>
+                <hr>
+                <li><a class="categorias3" href="https://help.nytimes.com/hc/en-us/sections/115003859548-Apps">Mobile Applications</a></li>
+                <li><a class="categorias3" href="https://nytimes.pressreader.com/">Replica Edition</a></li>
+                <li><a class="categorias3" href="https://www.nytimes.com/international/?action=click&region=Footer&pgtype=Homepage">International</a></li>
+                <li><a class="categorias3" href="https://www.nytimes.com/ca/?action=click&region=Footer&pgtype=Homepage">Canada</a></li>
+                <li><a class="categorias3" href="https://www.nytimes.com/es/?action=click&region=Footer&pgtype=Homepage">Español</a></li>
+                <li><a class="categorias3" href="https://cn.nytimes.com/">中國人</a></li>
+            </ul>
+        </div>
+
+    </div> <!-- div row different categories-->
+
+    <div class="row">
+        <div class="col-lg-12 d-none d-sm-none d-md-none d-lg-block d-xl-block" align="left">
+            <hr class="primerhr">
+            <nav id="footer_container"><ul>
+                <li><p class="menufooter">&copy; 2023 The New York Times</p></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/world">World</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/us">U.S.</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/politics">Politics</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/nyregion">N.Y.</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/business">Business</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/opinion">Opinion</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/science">Science</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/health">Health</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/sports">Sports</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/arts">Arts</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/books">Books</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/style">Style</a></li>
+                <li><a class="menufooter" href="https://www.nytimes.com/international/section/food">Food</a></li>
+            </ul></nav>
+        </div>
+    </div>
+
+
+    <!--to here (footer big screen-->
+
+
+    <!--Footer medium small and xsmall screen from here-->
+
+    <div class="row">
+        <div class="d-lg-none col-md-12 col-sm-12 col-12" align="center">
+            <div class="row">
+                <hr class="hrgris">
+                <hr class="hrgrisdoble">
+                <p class="TNYT">The New York Times</p>
+                <hr class="hrnopad">
+            </div>
+            <div class="row"> <!--Accordion-->
+                <div class="accordion accordion-flush" id="menofooterDesplegable">
+
+                    <div class="accordion-item"> <!--News-->
+                        <h2 class="accordion-header" id="news-flush-heading">
+                            <button class="accordion-button collapsed bonito" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-NEWS" aria-expanded="false" aria-controls="flush-collapse-NEWS">
+                                NEWS
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-NEWS" class="accordion-collapse collapse" aria-labelledby="news-flush-heading" data-bs-parent="#menofooterDesplegable">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/">Home Page</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/world">World</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/news-event/coronavirus">Coronavirus</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/us">U.S. News</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/politics">U.S. Politics</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/nyregion">New York</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/business">Business</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/technology">Tech</a></p>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/science">Science</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/sports">Sports</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/interactive/2022/us/fire-tracker-maps.html">Wildfire Tracker</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/obituaries">Obituaries</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/section/todayspaper">Today's paper</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/trending/">Trending</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/corrections">Corrections</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item"> <!--Options-->
+                        <h2 class="accordion-header" id="options-flush-heading">
+                            <button class="accordion-button collapsed bonito" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-OPTIONS" aria-expanded="false" aria-controls="flush-collapse-OPTIONS">
+                                OPTIONS
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-OPTIONS" class="accordion-collapse collapse" aria-labelledby="options-flush-heading" data-bs-parent="#menofooterDesplegable">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/opinion">Today's Opinion</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/opinion/columnists">Columnists</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/opinion/editorials">Editorials</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/opinion/contributors">Guest Essays</a></p>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/opinion/letters">Letters</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/opinion-video">Sunday Opinion</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/opinion-video">Opinion Video</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item"> <!--Arts-->
+                        <h2 class="accordion-header" id="arts-flush-heading">
+                            <button class="accordion-button collapsed bonito" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-ARTS" aria-expanded="false" aria-controls="flush-collapse-ARTS">
+                                ARTS
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-ARTS" class="accordion-collapse collapse" aria-labelledby="arts-flush-heading" data-bs-parent="#menofooterDesplegable">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/arts">Today's Art</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/arts/design">Art & Design</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/books">Books</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/books/best-sellers/">Best Seller Book List</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/arts/dance">Dance</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/movies">Movies</a></p>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/arts/music">Music</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/pop-culture">Pop Culture</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/arts/television">Television</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/theater">Theater</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/video/arts">Video: Arts</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item"> <!--Living-->
+                        <h2 class="accordion-header" id="living-flush-heading">
+                            <button class="accordion-button collapsed bonito" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-LIVING" aria-expanded="false" aria-controls="flush-collapse-LIVING">
+                                LIVING
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-LIVING" class="accordion-collapse collapse" aria-labelledby="living-flush-heading" data-bs-parent="#menofooterDesplegable">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/automobiles">Automotive</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/crosswords">Games</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/education">Education</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/food">Food</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/health">Health</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/jobs">Jobs</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/fashion/weddings">Love</a></p>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/magazine">Magazine</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/parenting">Parenting</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/realestate">Real Estate</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/style">Style</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/t-magazine">T Magazine</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/travel">Travel</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item"> <!--Listing & more-->
+                        <h2 class="accordion-header" id="listingmore-flush-heading">
+                            <button class="accordion-button collapsed bonito" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-LISTINGMORE" aria-expanded="false" aria-controls="flush-collapse-LISTINGMORE">
+                                LISTING AND MORE
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-LISTINGMORE" class="accordion-collapse collapse" aria-labelledby="listingmore-flush-heading" data-bs-parent="#menofooterDesplegable">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/reader-center">Reader Center</a></p>
+                                        <p><a class="linkfoot" href="https://theathletic.com/uk/">The Athletic</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/wirecutter/">Wirecutter</a></p>
+                                        <p><a class="linkfoot" href="https://cooking.nytimes.com/">Cooking</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/section/headway">Headway</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/nyt-events">Live Events</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/ca/section/learning">The Learning Network</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/subscription/info/tools-and-services">Tools & Services</a></p>
+                                    </div>
+                                    <div class="col-6 text-start">
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/podcasts">Podcast</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/video">Video</a></p>
+                                        <p><a class="linkfoot" href="https://www.nytimes.com/spotlight/graphics">Graphics</a></p>
+                                        <p><a class="linkfoot" href="https://timesmachine.nytimes.com/browser">TimesMachine</a></p>
+                                        <p><a class="linkfoot" href="https://store.nytimes.com/">Times Store</a></p>
+                                        <p><a class="linkfoot" href="https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=acct&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Faccount">Manage My Account</a></p>
+                                        <p><a class="linkfoot" href="https://nytlicensing.com/">NYTLicensing</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="d-lg-none col-md-12 col-sm-12 col-12" align="center">
+            <hr class="primerhr">
+                <p class="menufooternomarg">&copy; 2023 The New York Times</p>
+        </div>
+    </div>
+    <div class="d-lg-none row-cols-md-1 row-cols-1 row-cols-sm-1" align="center">
+        <p><a class="menufooter" href="https://www.nytimes.com/international/section/world">World</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/us">U.S.</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/politics">Politics</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/nyregion">N.Y.</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/business">Business</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/opinion">Opinion</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/science">Science</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/health">Health</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/sports">Sports</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/arts">Arts</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/books">Books</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/style">Style</a>
+        <a class="menufooter" href="https://www.nytimes.com/international/section/food">Food</a></p>
+    </div>
+
+
+
+
+
+
+</footer>
+
+<br>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
